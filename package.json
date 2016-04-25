@@ -1,6 +1,6 @@
 {
   "name": "save-as",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ES6 version of FileSaver.js window.saveAs functionality.",
   "main": "lib/index.js",
   "files": [
