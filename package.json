@@ -1,6 +1,6 @@
 {
   "name": "save-as",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ES6 version of FileSaver.js window.saveAs functionality.",
   "main": "lib/index.js",
   "files": [
@@ -9,9 +9,9 @@
     "doc"
   ],
   "scripts": {
+    "start": "babel src/lib -d lib --watch",
     "prebuild": "rimraf build",
     "build": "babel src/lib -d lib",
-    "watch": "npm run build -- --watch",
     "predoc": "rimraf doc",
     "doc": "esdoc -c ./esdoc.json",
     "prerelease": "npm run build",
