@@ -9,9 +9,9 @@
     "doc"
   ],
   "scripts": {
+    "start": "babel src/lib -d lib --watch",
     "prebuild": "rimraf build",
     "build": "babel src/lib -d lib",
-    "watch": "npm run build -- --watch",
     "predoc": "rimraf doc",
     "doc": "esdoc -c ./esdoc.json",
     "prerelease": "npm run build",
