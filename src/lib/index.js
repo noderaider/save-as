@@ -13,7 +13,7 @@
 
 /*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
 
-const saveAs = window.saveAs || (view => {
+export const saveAs = window.saveAs || (view => {
   // IE <10 is explicitly unsupported
   if (typeof navigator !== 'undefined' && /MSIE [1-9]\./.test(navigator.userAgent))
     return
